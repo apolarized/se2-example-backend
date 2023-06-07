@@ -26,6 +26,6 @@ jobs:
           script: |
             cd ~/se2/39/se2-example-backend
             git reset --hard origin/main
-            git pull https://${{ secrets.CLONE_TOKEN }}@github.com/karanikiotis/se2-example-backend main
+            git pull https://${{ secrets.CLONE_TOKEN }}@github.com/apolarized/se2-example-backend main
             bash -ci 'npm install'
             bash -ci 'pm2 restart example-backend-39'
