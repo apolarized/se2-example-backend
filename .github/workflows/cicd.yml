@@ -28,4 +28,5 @@ jobs:
             git reset --hard origin/main
             git pull https://${{ secrets.CLONE_TOKEN }}@github.com/apolarized/se2-example-backend main
             bash -ci 'npm install'
+            bash -ci 'npm run build'
             bash -ci 'pm2 restart example-backend-39'
